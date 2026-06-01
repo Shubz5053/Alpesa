@@ -23,7 +23,6 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
     alert('Thank you for your enquiry! We will get back to you soon.');
     setFormData({
       fullName: '',
