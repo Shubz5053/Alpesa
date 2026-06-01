@@ -80,9 +80,21 @@ function StudyDestinations() {
       <div className="country-nav">
         <div className="country-nav-inner">
           {Object.keys(destinations).map(key => (
-            <a key={key} href="#" onClick={(e) => { e.preventDefault(); setSelectedCountry(key); }} style={{ backgroundColor: selectedCountry === key ? 'var(--navy)' : '', color: selectedCountry === key ? '#fff' : '' }}>
+            <button
+              key={key}
+              type="button"
+              onClick={() => setSelectedCountry(key)}
+              style={{
+                border: 'none',
+                background: 'transparent',
+                padding: 0,
+                cursor: 'pointer',
+                backgroundColor: selectedCountry === key ? 'var(--navy)' : '',
+                color: selectedCountry === key ? '#fff' : ''
+              }}
+            >
               {destinations[key].flag} {destinations[key].name}
-            </a>
+            </button>
           ))}
         </div>
       </div>

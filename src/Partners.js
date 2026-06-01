@@ -28,42 +28,42 @@ function Partners() {
             <span className="ico">🇺🇸</span>
             <h3>USA</h3>
             <p>80+ universities — Ivy League, state schools, and specialized institutions across every state.</p>
-            <a href="#" className="lk">View Universities →</a>
+            <button type="button" className="lk">View Universities →</button>
           </div>
 
           <div className="card">
             <span className="ico">🇬🇧</span>
             <h3>United Kingdom</h3>
             <p>40+ universities — Russell Group and modern universities offering globally recognized degrees.</p>
-            <a href="#" className="lk">View Universities →</a>
+            <button type="button" className="lk">View Universities →</button>
           </div>
 
           <div className="card">
             <span className="ico">🇨🇦</span>
             <h3>Canada</h3>
             <p>35+ universities — research-intensive institutions with excellent post-graduation work permits.</p>
-            <a href="#" className="lk">View Universities →</a>
+            <button type="button" className="lk">View Universities →</button>
           </div>
 
           <div className="card">
             <span className="ico">🇦🇺</span>
             <h3>Australia</h3>
             <p>28+ universities — Go8 institutions and emerging universities offering affordable, high-quality education.</p>
-            <a href="#" className="lk">View Universities →</a>
+            <button type="button" className="lk">View Universities →</button>
           </div>
 
           <div className="card">
             <span className="ico">🇩🇪</span>
             <h3>Germany</h3>
             <p>22+ universities — excellent engineering, sciences, and affordable tuition for international students.</p>
-            <a href="#" className="lk">View Universities →</a>
+            <button type="button" className="lk">View Universities →</button>
           </div>
 
           <div className="card">
             <span className="ico">🇫🇷</span>
             <h3>France</h3>
             <p>18+ universities — world-class higher education with accessible tuition and multicultural campus life.</p>
-            <a href="#" className="lk">View Universities →</a>
+            <button type="button" className="lk">View Universities →</button>
           </div>
         </div>
 

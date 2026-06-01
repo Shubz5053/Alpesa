@@ -14,8 +14,8 @@ function Services() {
           <h1>Complete support, from <em>application to arrival</em>.</h1>
           <p className="hero-lede">We guide you through every stage of your study-abroad journey — counselling, test prep, admissions, funding, visas, departure, and on-campus university support. Everything you need, under one roof.</p>
           <div className="hero-cta">
-            <a href="#" className="btn btn-primary">Student Services</a>
-            <a href="#" className="btn btn-secondary">University Services</a>
+            <button type="button" className="btn btn-primary">Student Services</button>
+            <button type="button" className="btn btn-secondary">University Services</button>
           </div>
         </div>
       </header>
