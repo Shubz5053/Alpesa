@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Contact.css';
 import Header from './Header';
 import Footer from './Footer';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -23,17 +24,44 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Thank you for your enquiry! We will get back to you soon.');
-    setFormData({
-      fullName: '',
-      email: '',
-      phone: '',
-      interested: 'Study abroad — undergraduate',
-      destination: 'Not sure yet — advise me',
-      message: ''
-    });
-  };
 
+    const templateParams = {
+      fullName: formData.fullName,
+      email: formData.email,
+      phone: formData.phone,
+      interested: formData.interested,
+      destination: formData.destination,
+      message: formData.message,
+    };
+
+    emailjs.send(
+      'service_05nr2ty',
+      'template_bfytf76',
+      templateParams,
+      '8_xFG2HwKPgy6--IR'
+    )
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+
+          alert('Thank you for your enquiry! We will get back to you soon.');
+
+          setFormData({
+            fullName: '',
+            email: '',
+            phone: '',
+            interested: 'Study abroad — undergraduate',
+            destination: 'Not sure yet — advise me',
+            message: ''
+          });
+        },
+        (error) => {
+          console.log('FAILED...', error);
+
+          alert('Failed to send enquiry');
+        }
+      );
+  };
   return (
     <>
       <Header activePage="contact" />
